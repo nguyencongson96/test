@@ -54,8 +54,9 @@ a:visited {
 }
 
 .quote > .content {
-  font-size: 1.8rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: -1px;
   border-left: 3px solid orange;
 }
 
