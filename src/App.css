@@ -1,38 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .App {
-  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 100px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a,
+a:visited {
+  appearance: none;
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-random {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-random > svg {
+  aspect-ratio: 1/1;
+  width: 20px;
+  fill: gray;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-random:hover > svg {
+  transform: rotate(360deg);
+  transition: 4s all linear;
+}
+
+.quote > * {
+  padding: 0 25px;
+}
+
+.quote > .content {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  border-left: 3px solid orange;
+}
+
+.quote {
+  margin-bottom: 70px;
+}
+
+.quote > .info > .author {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.quote > .info > .tag {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.author-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 100%;
 }
