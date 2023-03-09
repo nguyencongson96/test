@@ -12,7 +12,9 @@ const Author = (props) => {
   ));
   return (
     <div className="quote-summary">
-      <div className="author-name">{filterList[0].author}</div>
+      <div className="author-name">
+        {filterList.length === 0 ? "" : filterList[0].author}
+      </div>
       <div className="quote-list">{filterElement}</div>
     </div>
   );
