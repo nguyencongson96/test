@@ -74,7 +74,6 @@ a:visited {
 
 .quote > .others * {
   color: black;
-  fill: black;
   transition: 1s all linear;
 }
 
@@ -90,6 +89,7 @@ a:visited {
 .quote .btn-next {
   width: 3%;
   aspect-ratio: 1/1;
+  fill: transparent;
 }
 
 .quote .info > .author {
